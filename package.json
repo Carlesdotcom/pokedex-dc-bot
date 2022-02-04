@@ -1,0 +1,17 @@
+{
+  "name": "botbank",
+  "version": "1.0.0",
+  "description": "Pokedex",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "author": "Carlosdevjr",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "nodemon": "^2.0.15",
+    "pokedex-api": "^1.1.2",
+    "pokedex-promise-v2": "^4.0.0"
+  }
+}
