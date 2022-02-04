@@ -307,4 +307,4 @@ client.on("messageCreate", (message) => {
     }
 })*/
 
-client.login('OTM4MTcxNzcwNTUxMzAwMTc2.YfmajA.nVKf0GNUCgTqqNuf8IfVGiGDVUI')
+client.login('token')
