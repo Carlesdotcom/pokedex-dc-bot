@@ -12,11 +12,10 @@ client.on("messageCreate", (message) => {
     if(message.author.bot) return
     if(message.content == "h1"){
         message.channel.send('hello')
-    }else if(message.content == 'xau.favoritepoke!'){
+    }else if(message.content == '/poke_one'){
         const embed = new Discord.MessageEmbed()
         .setColor('BLUE')
-        .setTitle('PokeDex')
-        .setDescription('Pokémon Favorito')
+        .setTitle('Pokémon em sua mão')
         //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
         .setThumbnail('https://cdn.discordapp.com/attachments/895712424987099136/938958649089470484/poke_bank_trangrowth.png')
         .addFields([
@@ -43,34 +42,269 @@ client.on("messageCreate", (message) => {
         message.reply({embeds: [embed]})
     }
 })
-
 client.on("messageCreate", (message) => {
     if(message.author.bot) return
     if(message.content == "h1"){
         message.channel.send('hello')
-    }else if(message.content == 'davi.saudade'){
+    }else if(message.content == '/poke_mamoswine'){
         const embed = new Discord.MessageEmbed()
-        .setColor('BLUE')
-        .setTitle('#notaodavikk')
-        .setDescription('Muié favorita')
-        .setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
-        .setThumbnail('https://instagram.fcgh17-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/272917641_113961227859861_655921300838507727_n.jpg?_nc_ht=instagram.fcgh17-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=L6Y_3WEJKJ4AX8ZyKzZ&tn=kvXSyW053Y7vvh1P&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=Mjc2MjA5NDExMjIzMTE1NjA4OQ%3D%3D.2-ccb7-4&oh=00_AT-DdT6cWYhDBCi-Z1SkBPZwZM9d6q4qxRaxT2ow8_XA0w&oe=6202DA9C&_nc_sid=30a2ef')
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Mamoswine')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/473.png')
         .addFields([
             {
-                name: 'Pokémon', value:'Kakiuchi', inline: false
+                name: 'Pokémon', value:'Mamoswine', inline: true
             },
             {
-                name: 'Tipo:', value:'Ruiva e baixinha', inline: false
+                name: 'Category', value:'Twin Tusk', inline: true
             },
             {
-                name: 'SEXTOU COM S DE', value:'S A U D A D E', inline: false
+                name: 'Weight', value:'291.0 kg', inline: false
+            },
+            {
+                name: 'Height', value:'2.5m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Oblivious and Snow Cloak', inline: false
             }
+            
         ])
         .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
-        .setFooter('Paixão do davi!!!', message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_milotic'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Milotic')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png')
+        .addFields([
+            {
+                name: 'Pokémon', value:'Milotic', inline: true
+            },
+            {
+                name: 'Category', value:'Tender', inline: true
+            },
+            {
+                name: 'Weight', value:'162.0 kg', inline: false
+            },
+            {
+                name: 'Height', value:'6.2m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Marvel Scale and Competitive', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_alakazam'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Alakazam')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png')
+        .addFields([
+            {
+                name: 'Pokémon', value:'Alakazam', inline: true
+            },
+            {
+                name: 'Category', value:'Psi', inline: true
+            },
+            {
+                name: 'Weight', value:'48.0 kg', inline: false
+            },
+            {
+                name: 'Height', value:'6.2m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Inner Focus and Synchronize', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_gardevoir'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Gardevoir')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png')
+        .addFields([
+            {
+                name: 'Pokémon', value:'Gardevoir', inline: true
+            },
+            {
+                name: 'Category', value:'Embrace', inline: true
+            },
+            {
+                name: 'Weight', value:'48.4 kg', inline: false
+            },
+            {
+                name: 'Height', value:'1.6m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Trace and Synchronize', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_gardevoir'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Gardevoir')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png')
+        .addFields([
+            {
+                name: 'Pokémon', value:'Gardevoir', inline: true
+            },
+            {
+                name: 'Category', value:'Embrace', inline: true
+            },
+            {
+                name: 'Weight', value:'48.4 kg', inline: false
+            },
+            {
+                name: 'Height', value:'1.6m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Trace and Synchronize', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_dragonite'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('BLACK')
+        .setTitle('Aqui está a dex de Dragonite')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png')
+        .addFields([
+            {
+                name: 'Pokémon', value:'Dragonite', inline: true
+            },
+            {
+                name: 'Category', value:'Dragon', inline: true
+            },
+            {
+                name: 'Weight', value:'210.0 kg', inline: false
+            },
+            {
+                name: 'Height', value:'2.2m', inline: false
+            },
+            {
+                name: 'Abilities', value:'Inner Focus', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para consultar a desk de qualquer pokémon do seu time digite /poke_(nome do pokémon)', message.author.displayAvatarURL())
 
         message.reply({embeds: [embed]})
     }
 })
 
-client.login('OTM4MTcxNzcwNTUxMzAwMTc2.YfmajA.MCk7BYAI8BOVvZmbqaf3-_nEAJs')
+
+client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_bag'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('RED')
+        .setTitle('Aqui está sua PokeBag!')
+        //.setImage(message.author.displayAvatarURL({dynamic: true, sizeL: 2048, format: 'jpg'}))
+        .setThumbnail('https://cdn.discordapp.com/attachments/895712424987099136/939281390464282674/download.jpg')
+        .addFields([
+            {
+                name: 'Tangrowth', value:'Macho Lvl 98', inline: false
+            },
+            {
+                name: 'Mamoswine', value:'Macho Lvl 78', inline: false
+            },
+            {
+                name: 'Milotic', value:'Fêmea Lvl 43', inline: false
+            },
+            {
+                name: 'Alakazam', value:'Macho Lvl 100', inline: false
+            },
+            {
+                name: 'Gardevoir', value:'Femêa Lvl 100', inline: false
+            },
+            {
+                name: 'Dragonite', value:'Macho Lvl 88', inline: false
+            }
+            
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Para ver sua PokeBag digite /poke_bag', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})
+/*client.on("messageCreate", (message) => {
+    if(message.author.bot) return
+    if(message.content == "h1"){
+        message.channel.send('hello')
+    }else if(message.content == '/poke_cp'){
+        const embed = new Discord.MessageEmbed()
+        .setColor('RED')
+        .setTitle('Bem vindo ao Centro Pokémon')
+        .setDescription('Me de um momento para tratar seus pokemóns...')
+        .setThumbnail('https://1.bp.blogspot.com/-DIcbaqxzeug/Ukch8xA5VQI/AAAAAAAAA30/yPMjIpTnQ7I/s640/470454-51_56.jpg')
+        .addFields([
+            {
+                name: 'Todos seus pokémons foram curados', value:'Cuide bem deles!', inline: false
+            }
+        ])
+        .setAuthor('carlos.com' , message.author.displayAvatarURL(), message.author.displayAvatarURL())
+        .setFooter('Espero não te ver aqui tão cedo '-'', message.author.displayAvatarURL())
+
+        message.reply({embeds: [embed]})
+    }
+})*/
+
+client.login('OTM4MTcxNzcwNTUxMzAwMTc2.YfmajA.nVKf0GNUCgTqqNuf8IfVGiGDVUI')
